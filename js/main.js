@@ -50,6 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 message.className = 'form-message success';
             }
 
+            if (typeof ym === 'function') {
+                ym(110934752, 'reachGoal', 'order');
+            }
+
             form.reset();
         } catch (error) {
             if (message) {
