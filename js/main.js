@@ -14,6 +14,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    const stickyCta = document.getElementById('sticky-cta');
+
+    if (stickyCta && registrationSection && 'IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                stickyCta.classList.toggle('hidden', entry.isIntersecting);
+            });
+        });
+        observer.observe(registrationSection);
+    }
+
     if (!form) {
         return;
     }

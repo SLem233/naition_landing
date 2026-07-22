@@ -317,6 +317,37 @@ img {
     transform: scale(1.02);
 }
 
+.section-cta {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.section-cta .section-cta-btn {
+    width: auto;
+    padding: 16px 36px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    background: var(--heading);
+    color: var(--white);
+}
+
+.btn.sticky-cta {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 50;
+    width: auto;
+    padding: 14px 28px;
+    font-weight: 700;
+    background: var(--heading);
+    color: var(--white);
+    box-shadow: 0 12px 28px rgba(45, 52, 54, 0.25);
+}
+
+.btn.sticky-cta.hidden {
+    display: none;
+}
+
 .pricing-badge {
     display: inline-block;
     align-self: flex-start;
